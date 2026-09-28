@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Para ti, Mon ❤️</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>❤️</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,500&family=Karla:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Fondo decorativo compartido -->
+<div class="fondo-decorativo" aria-hidden="true">
+  <svg class="destello destello-1" viewBox="0 0 200 200"><circle cx="100" cy="100" r="90"/></svg>
+  <svg class="destello destello-2" viewBox="0 0 200 200"><circle cx="100" cy="100" r="90"/></svg>
+  <svg class="linea-suave" viewBox="0 0 400 400" preserveAspectRatio="none">
+    <path d="M0,200 C100,120 300,280 400,200" />
+  </svg>
+</div>
+
+<!-- ============================================================ -->
+<!-- PANTALLA 1: CUENTA REGRESIVA -->
+<!-- ============================================================ -->
+<main id="pantalla-espera" class="pantalla activa">
+  <div class="contenedor-espera">
+
+    <p class="eyebrow-suave">para Mon</p>
+    <h1 class="titulo-espera">Algo se está preparando<span class="punto-dorado">.</span></h1>
+
+    <div class="tarjeta-mensaje-dia">
+      <p id="texto-mensaje-dia" class="texto-mensaje-dia"></p>
+    </div>
+
+    <div class="reloj" role="timer" aria-live="off">
+      <div class="reloj-unidad">
+        <span id="reloj-dias" class="reloj-numero">00</span>
+        <span class="reloj-etiqueta">días</span>
+      </div>
+      <span class="reloj-separador">:</span>
+      <div class="reloj-unidad">
+        <span id="reloj-horas" class="reloj-numero">00</span>
+        <span class="reloj-etiqueta">horas</span>
+      </div>
+      <span class="reloj-separador">:</span>
+      <div class="reloj-unidad">
+        <span id="reloj-minutos" class="reloj-numero">00</span>
+        <span class="reloj-etiqueta">min</span>
+      </div>
+      <span class="reloj-separador">:</span>
+      <div class="reloj-unidad">
+        <span id="reloj-segundos" class="reloj-numero">00</span>
+        <span class="reloj-etiqueta">seg</span>
+      </div>
+    </div>
+
+    <p class="pista-espera">7 de octubre — nuestro día ❤️</p>
+
+    <svg class="corazon-flotante cf-1" viewBox="0 0 32 29"><path d="M23.6 0c-3.4 0-6.3 2-7.6 4.9C14.7 2 11.8 0 8.4 0 3.8 0 0 3.8 0 8.4c0 9.4 16 20.6 16 20.6s16-11.2 16-20.6C32 3.8 28.2 0 23.6 0z"/></svg>
+    <svg class="corazon-flotante cf-2" viewBox="0 0 32 29"><path d="M23.6 0c-3.4 0-6.3 2-7.6 4.9C14.7 2 11.8 0 8.4 0 3.8 0 0 3.8 0 8.4c0 9.4 16 20.6 16 20.6s16-11.2 16-20.6C32 3.8 28.2 0 23.6 0z"/></svg>
+  </div>
+</main>
+
+<!-- ============================================================ -->
+<!-- PANTALLA 2: DESBLOQUEO -->
+<!-- ============================================================ -->
+<section id="pantalla-desbloqueo" class="pantalla">
+  <div class="contenedor-desbloqueo">
+    <div class="destello-central" aria-hidden="true"></div>
+    <p id="linea-desbloqueo-1" class="linea-desbloqueo oculto">Por fin llegó el día, Mon. ❤️</p>
+    <p id="linea-desbloqueo-2" class="linea-desbloqueo oculto">Ahora sí… esta sorpresa es completamente tuya.</p>
+    <button id="boton-abrir" class="boton-principal oculto" type="button">Abrir mi sorpresa ❤️</button>
+  </div>
+</section>
+
+<!-- ============================================================ -->
+<!-- PANTALLA 3: EXPERIENCIA PRINCIPAL -->
+<!-- ============================================================ -->
+<div id="pantalla-experiencia" class="pantalla">
+
+  <nav id="nav-discreta" class="nav-discreta">
+    <a href="#seccion-recuerdos">Recuerdos</a>
+    <a href="#seccion-historia">Nuestra historia</a>
+    <a href="#seccion-canciones">Canciones</a>
+    <a href="#seccion-carta">Carta</a>
+  </nav>
+
+  <!-- SECCIÓN 1: INTRODUCCIÓN -->
+  <section id="seccion-intro" class="seccion seccion-intro">
+    <div class="aparece">
+      <p class="eyebrow-suave">7 de octubre, 2026</p>
+      <h1 class="titulo-hero">Para ti,<br>Mon<span class="punto-dorado">.</span></h1>
+      <p class="texto-intro">Llevo días guardando este secreto y hoy por fin es tuyo. Es un pedacito de nosotros: nuestras fotos, nuestra historia, las canciones que me recuerdan a ti y algunas cosas que quería decirte con calma. Tómate tu tiempo para verlo todo. ❤️</p>
+      <a href="#seccion-recuerdos" class="boton-continuar">Continuar ❤️</a>
+    </div>
+  </section>
+
+  <!-- SECCIÓN 2: FOTOS EXTRA -->
+  <section id="seccion-recuerdos" class="seccion seccion-recuerdos">
+    <div class="encabezado-seccion aparece">
+      <p class="eyebrow-suave">un poquito de nosotros</p>
+      <h2 class="titulo-seccion">Un poquito de nosotros ❤️</h2>
+    </div>
+
+    <div class="galeria-extra">
+      <button class="tarjeta-extra aparece" data-full="assets/fotos/Extra1.JPEG" style="--retraso:0s">
+        <img src="assets/fotos/Extra1.JPEG" alt="Foto nuestra, número uno" loading="lazy">
+      </button>
+      <button class="tarjeta-extra aparece" data-full="assets/fotos/Extra2.JPEG" style="--retraso:0.1s">
+        <img src="assets/fotos/Extra2.JPEG" alt="Foto nuestra, número dos" loading="lazy">
+      </button>
+      <button class="tarjeta-extra aparece" data-full="assets/fotos/Extra3.jpg" style="--retraso:0.2s">
+        <img src="assets/fotos/Extra3.jpg" alt="Foto nuestra, número tres" loading="lazy">
+      </button>
+      <button class="tarjeta-extra aparece" data-full="assets/fotos/Extra4.jpg" style="--retraso:0.3s">
+        <img src="assets/fotos/Extra4.jpg" alt="Foto nuestra, número cuatro" loading="lazy">
+      </button>
+    </div>
+    <a href="#seccion-historia" class="boton-continuar aparece">Continuar ❤️</a>
+  </section>
+
+  <!-- SECCIÓN 3: LÍNEA DEL TIEMPO -->
+  <section id="seccion-historia" class="seccion seccion-historia">
+    <div class="encabezado-seccion aparece">
+      <p class="eyebrow-suave">desde el principio</p>
+      <h2 class="titulo-seccion">Nuestra historia ❤️</h2>
+    </div>
+
+    <ol class="linea-tiempo">
+      <li class="momento aparece">
+        <div class="momento-foto"><img src="assets/fotos/Nuestroprimermensaje.JPEG" alt="Nuestro primer mensaje" loading="lazy"></div>
+        <div class="momento-texto">
+          <span class="momento-fecha">20 de abril</span>
+          <p>Fue el día que me animé a mandarte el primer mensaje, que quizás fue un mensaje tonto, pero es el mensaje más especial que he mandado.</p>
+        </div>
+      </li>
+      <li class="momento aparece">
+        <div class="momento-foto"><img src="assets/fotos/Susprimerasflores.JPEG" alt="Sus primeras flores" loading="lazy"></div>
+        <div class="momento-texto">
+          <span class="momento-fecha">16 de mayo</span>
+          <p>Fue nuestra primera cita y el día que, según tú, te estafé. Ese día te di tus primeras flores.</p>
+        </div>
+      </li>
+      <li class="momento aparece">
+        <div class="momento-foto"><img src="assets/fotos/Ellamexico.JPEG" alt="Ella México" loading="lazy"></div>
+        <div class="momento-texto">
+          <span class="momento-fecha">11 de junio</span>
+          <p>Me mandaste una de mis fotos favoritas por alguna extraña razón.</p>
+        </div>
+      </li>
+      <li class="momento aparece">
+        <div class="momento-foto"><img src="assets/fotos/Fotofamiliar.JPEG" alt="Foto familiar" loading="lazy"></div>
+        <div class="momento-texto">
+          <span class="momento-fecha">20 de junio</span>
+          <p>Fueron los XV de Fernanda. Ese día tus papás hicieron que saliera en la foto familiar.</p>
+        </div>
+      </li>
+      <li class="momento aparece">
+        <div class="momento-foto"><img src="assets/fotos/Enelcerro1.JPEG" alt="En el cerro, primera foto" loading="lazy"></div>
+        <div class="momento-texto">
+          <span class="momento-fecha">7 de agosto</span>
+          <p>Ese día, por alguna extraña razón, decidimos que subir un cerro era buena idea.</p>
+        </div>
+      </li>
+      <li class="momento aparece">
+        <div class="momento-foto"><img src="assets/fotos/Enelcerro2.JPEG" alt="En el cerro, segunda foto" loading="lazy"></div>
+        <div class="momento-texto">
+          <span class="momento-fecha">7 de agosto</span>
+          <p>Aquí, según nosotros, ya estábamos cerca de llegar. Cosa que no era verdad.</p>
+        </div>
+      </li>
+      <li class="momento aparece">
+        <div class="momento-foto"><img src="assets/fotos/Nuestraprimerafoto.JPEG" alt="Nuestra primera foto" loading="lazy"></div>
+        <div class="momento-texto">
+          <span class="momento-fecha">7 de agosto</span>
+          <p>Fue nuestra primera foto juntos, un poco derrotados pero juntos.</p>
+        </div>
+      </li>
+      <li class="momento aparece">
+        <div class="momento-foto"><img src="assets/fotos/Floresdeclaracion.JPEG" alt="Flores de la declaración" loading="lazy"></div>
+        <div class="momento-texto">
+          <span class="momento-fecha">7 de agosto</span>
+          <p>Ese día, a pesar de casi no bajar del cerro, te tenía guardada una sorpresa: pedirte que fueras mi novia (aunque tú no creías que eso iba a pasar).</p>
+        </div>
+      </li>
+      <li class="momento aparece">
+        <div class="momento-foto"><img src="assets/fotos/Ellapintando.JPEG" alt="Ella pintando" loading="lazy"></div>
+        <div class="momento-texto">
+          <span class="momento-fecha">7 de agosto</span>
+          <p>Ese día, después de que me dijeras que sí, nos pusimos a hacer un cuadro para recordar esa fecha. Muy linda te veías pintando.</p>
+        </div>
+      </li>
+      <li class="momento aparece">
+        <div class="momento-foto"><img src="assets/fotos/Ellatomandococa.JPEG" alt="Ella tomando una Coca" loading="lazy"></div>
+        <div class="momento-texto">
+          <span class="momento-fecha">4 de septiembre</span>
+          <p>Ese día nos vimos en tu casa y, según yo, sin que te dieras cuenta, te tomé una foto mientras tomabas Coca. Pero creo que sí te diste cuenta.</p>
+        </div>
+      </li>
+      <li class="momento aparece">
+        <div class="momento-foto"><img src="assets/fotos/Ellahaciendofiguras%20.JPEG" alt="Ella haciendo figuras de arcilla" loading="lazy"></div>
+        <div class="momento-texto">
+          <span class="momento-fecha">18 de septiembre</span>
+          <p>Ese día nos pusimos a hacer figuritas de arcilla y, de igual manera, te tomé una foto sin que te dieras cuenta. Muy linda te veías haciendo tu gallina.</p>
+        </div>
+      </li>
+    </ol>
+    <a href="#seccion-canciones" class="boton-continuar aparece">Continuar ❤️</a>
+  </section>
+
+  <!-- SECCIÓN 4: CANCIONES -->
+  <section id="seccion-canciones" class="seccion seccion-canciones">
+    <div class="encabezado-seccion aparece">
+      <p class="eyebrow-suave">nuestra playlist</p>
+      <h2 class="titulo-seccion">Canciones que me recuerdan a ti 🎵</h2>
+    </div>
+
+    <div class="grid-canciones">
+      <article class="tarjeta-cancion tono-1 aparece">
+        <div class="cancion-encabezado">
+          <span class="nota-svg" aria-hidden="true">♪</span>
+          <div>
+            <h3>Ojitos lindos</h3>
+            <p class="cancion-artista">Bad Bunny, Bomba Estéreo</p>
+          </div>
+        </div>
+        <p class="cancion-descripcion">Esta canción me recuerda a ti, por cómo dice que como tú no hay otra, y describe todo lo que siento y quiero sentir por ti.</p>
+        <a class="boton-spotify" href="https://open.spotify.com/track/3k3NWokhRRkEPhCzPmV8TW?si=wR-ytZ0ETe2BCUBp8Klq1A&utm_source=copy-link" target="_blank" rel="noopener">Escuchar en Spotify 🎧</a>
+      </article>
+
+      <article class="tarjeta-cancion tono-2 aparece">
+        <div class="cancion-encabezado">
+          <span class="nota-svg" aria-hidden="true">♪</span>
+          <div>
+            <h3>Adán y Eva</h3>
+            <p class="cancion-artista">Paulo Londra</p>
+          </div>
+        </div>
+        <p class="cancion-descripcion">Esta canción me recuerda cómo iniciamos y cómo, día a día, quiero conquistarte más.</p>
+        <a class="boton-spotify" href="https://open.spotify.com/track/132ALUzVLmqYB4UsBj5qD6?si=bYokve7LRJaYJlcLpk5buQ&utm_source=copy-link" target="_blank" rel="noopener">Escuchar en Spotify 🎧</a>
+      </article>
+
+      <article class="tarjeta-cancion tono-3 aparece">
+        <div class="cancion-encabezado">
+          <span class="nota-svg" aria-hidden="true">♪</span>
+          <div>
+            <h3>Mil vidas</h3>
+            <p class="cancion-artista">Mora, Ryan Castro</p>
+          </div>
+        </div>
+        <p class="cancion-descripcion">Me recuerda a ti porque quiero mil vidas contigo.</p>
+        <a class="boton-spotify" href="https://open.spotify.com/track/4mIlk7LzrD260sNOY4hbtS?si=tjaro3GeRV6h0Pm1LX6lkw&utm_source=copy-link" target="_blank" rel="noopener">Escuchar en Spotify 🎧</a>
+      </article>
+
+      <article class="tarjeta-cancion tono-4 aparece">
+        <div class="cancion-encabezado">
+          <span class="nota-svg" aria-hidden="true">♪</span>
+          <div>
+            <h3>Algo mágico</h3>
+            <p class="cancion-artista">Rauw Alejandro</p>
+          </div>
+        </div>
+        <p class="cancion-descripcion">Me recuerda a ti porque todo lo que siento por ti es algo mágico, es algo que hace que me sienta flotando, en una nube.</p>
+        <a class="boton-spotify" href="https://open.spotify.com/track/0zlnHTHiBQ68ZCAmTw5ozm?si=7tC4vBcaQC-ne22A9mQacQ&utm_source=copy-link" target="_blank" rel="noopener">Escuchar en Spotify 🎧</a>
+      </article>
+
+      <article class="tarjeta-cancion tono-5 aparece">
+        <div class="cancion-encabezado">
+          <span class="nota-svg" aria-hidden="true">♪</span>
+          <div>
+            <h3>Reina pepiada</h3>
+            <p class="cancion-artista">Álvaro Díaz</p>
+          </div>
+        </div>
+        <p class="cancion-descripcion">Me recuerda porque describe lo que veo cada vez que estoy a tu lado y todo lo que siento.</p>
+        <a class="boton-spotify" href="https://open.spotify.com/track/03V0FZwKTJhXeW2zVNkyP7?si=vfytbUhURSGisxhuDlTUpQ&utm_source=copy-link" target="_blank" rel="noopener">Escuchar en Spotify 🎧</a>
+      </article>
+
+      <article class="tarjeta-cancion tono-6 aparece">
+        <div class="cancion-encabezado">
+          <span class="nota-svg" aria-hidden="true">♪</span>
+          <div>
+            <h3>Cosas que no te dije</h3>
+            <p class="cancion-artista">Saiko</p>
+          </div>
+        </div>
+        <p class="cancion-descripcion">Qué decir de esta canción, me recuerda tanto a ti porque yo te quiero dormida en la cama con mi hoodie, pero describe lo que encontré contigo y lo que quiero lograr.</p>
+        <a class="boton-spotify" href="https://open.spotify.com/track/5xSt1wxZobFcLzHrFakv6z?si=8HIIm4SRS0O3u0VltBluSg&utm_source=copy-link" target="_blank" rel="noopener">Escuchar en Spotify 🎧</a>
+      </article>
+    </div>
+    <a href="#seccion-carta" class="boton-continuar aparece">Continuar ❤️</a>
+  </section>
+
+  <!-- SECCIÓN 5: CARTA -->
+  <section id="seccion-carta" class="seccion seccion-carta">
+    <div class="encabezado-seccion aparece">
+      <p class="eyebrow-suave">para ti</p>
+      <h2 class="titulo-seccion titulo-seccion-claro">Una carta para ti</h2>
+    </div>
+
+    <div class="escritorio-carta aparece">
+      <button id="sobre" class="sobre" type="button" aria-expanded="false">
+        <span class="sobre-solapa"></span>
+        <span class="sobre-cuerpo"></span>
+        <span class="sobre-sello">❤️</span>
+        <span class="sobre-instruccion">Toca para abrir</span>
+      </button>
+
+      <div id="hoja-carta" class="hoja-carta oculto">
+        <p>La verdad, cada que te quiero escribir una carta nunca encuentro la forma de cómo empezar. Cada que pienso en cómo debería hacerlo, entre tantas cosas que pienso, nunca encuentro la forma, y es que son tantas las cosas que siento por ti que muchas veces pienso que me quedo corto al expresar todo lo que me haces sentir el día a día. No tengo las palabras para explicar lo mucho que eres para mí, ya que gracias a ti sé lo que es amar y sentirse amado. Tú cambiaste mi forma de ver las cosas; para serte sincero, antes para mí era imposible pensar en una relación, y mucho menos a distancia, pero desde que estoy contigo me doy cuenta de que, mientras sea la persona correcta, una relación nunca es imposible. Y aunque todos los días te extraño demasiado, eso no impide que intente, día a día, demostrarte mi amor.</p>
+        <p>Sé que apenas llevamos 2 meses siendo novios, pero en muy poco tiempo te has convertido en esa persona que amo y que quiero amar toda mi vida. Tal vez suene un poco intenso, pero yo no quiero conocer a nadie más porque contigo ya encontré todo lo que necesito. Sé que a veces no me crees, pero eres la niña más linda de este mundo y no hay nada que me haga cambiar de opinión, y no solo te hablo de lo físico: eres la niña más linda en todos los aspectos, ya que no por cualquiera estaría tan enamorado como lo estoy de ti.</p>
+        <p>Ya sé cuál va a ser tu reacción al leer esta carta o al terminarla, pero créeme que todo lo que hago por ti y siento por ti, lo hago por amor. Nunca me voy a cansar de demostrarte que te amo, porque tú te mereces eso: una persona que todos los días te demuestre lo mucho que te ama. Esa es la carta.</p>
+      </div>
+    </div>
+    <a href="#seccion-final" class="boton-continuar aparece">Continuar ❤️</a>
+  </section>
+
+  <!-- SECCIÓN 6: MENSAJE FINAL -->
+  <section id="seccion-final" class="seccion seccion-final">
+    <div class="fondo-final" aria-hidden="true"></div>
+    <div class="contenido-final aparece">
+      <p class="frase-final">sé que soy muy repetitivo y te lo digo en cada momento, pero te amo mucho amor</p>
+      <p class="firma-final">Con mucho amor, para ti, Mon. ❤️</p>
+    </div>
+  </section>
+
+</div>
+
+<!-- LIGHTBOX -->
+<div id="lightbox" class="lightbox oculto" role="dialog" aria-modal="true">
+  <button id="lightbox-cerrar" class="lightbox-cerrar" aria-label="Cerrar">✕</button>
+  <img id="lightbox-imagen" src="" alt="">
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
