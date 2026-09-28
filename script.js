@@ -6,7 +6,7 @@
 // true  = la página se comporta como si ya fuera 7 de octubre de 2026.
 // false = comportamiento real (cuenta regresiva y desbloqueo por fecha).
 // IMPORTANTE: déjalo en false antes de mandarle el enlace a Mon.
-const TEST_MODE = false;
+const TEST_MODE = true;
 
 // La fecha/hora de desbloqueo: 7 de octubre de 2026, 00:00, hora de
 // Ciudad de México. Desde 2022 México ya no cambia de horario, así
